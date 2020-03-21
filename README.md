@@ -4,11 +4,11 @@
 
 `$ ./mvnw clean package -Dtest=OwnerRepositoryTests,OwnerResourceTests`
 
-> To skip the tests run use: `-DskipTests=true` 
+> To skip the tests use: `-DskipTests=true` 
 
 ## Run with `docker-compose`
 
-`$ docker-compose build && $ docker-compose up`
+`$ docker-compose build && docker-compose up`
 
 ## API
 

@@ -1,0 +1,36 @@
+{
+  "_embedded": {
+    "owners": [
+      {
+        "firstName": "John",
+        "lastName": "Doe",
+        "address": "110 W. Liberty St.",
+        "city": "Madison",
+        "telephone": "6085551023",
+        "_links": {
+          "self": {
+            "href": "http://localhost/owners/1"
+          },
+          "owner": {
+            "href": "http://localhost/owners/1"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost/owners{?page,size,sort}",
+      "templated": true
+    },
+    "profile": {
+      "href": "http://localhost/profile/owners"
+    }
+  },
+  "page": {
+    "size": 20,
+    "totalElements": 1,
+    "totalPages": 1,
+    "number": 0
+  }
+}

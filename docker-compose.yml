@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: tc
+      POSTGRES_USER: tc
+      POSTGRES_PASSWORD: tc
+  app:
+    build: .
+    ports:
+      - "9000:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db/tc
+      SPRING_DATASOURCE_USERNAME: tc
+      SPRING_DATASOURCE_PASSWORD: tc
+    depends_on:
+      - db
+

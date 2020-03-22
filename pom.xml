@@ -12,7 +12,7 @@
     <artifactId>spring-boot-tc</artifactId>
     <version>1.0.0</version>
     <name>spring-boot-tc</name>
-    <description>Spring Boot with Testcontainers and PostgreSQL (or MySQL or MariaDB)</description>
+    <description>Spring Boot with PostgreSQL</description>
 
     <properties>
         <java.version>13</java.version>
@@ -35,16 +35,6 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -71,18 +61,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.testcontainers</groupId>
-            <artifactId>mysql</artifactId>
-            <version>${org.testcontainers.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.testcontainers</groupId>
-            <artifactId>mariadb</artifactId>
-            <version>${org.testcontainers.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured-all</artifactId>
             <version>${io.rest-assured.version}</version>
@@ -95,7 +73,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -104,5 +81,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

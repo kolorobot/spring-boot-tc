@@ -1,10 +1,10 @@
-# Spring Boot tests with Testcontainers and PostgreSQL (or MySQL or MariaDB)
+# Spring Boot tests with Testcontainers and PostgreSQL
 
 ## Package the application
 
 - Build package
 
-`$ ./mvnw clean package -Dtest=OwnerRepositoryTests,OwnerResourceTests`
+`$ ./mvnw clean package`
 
 > To skip the tests use: `-DskipTests=true` 
 

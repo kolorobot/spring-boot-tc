@@ -2,9 +2,15 @@
 
 ## Package the application
 
+- Build package
+
 `$ ./mvnw clean package -Dtest=OwnerRepositoryTests,OwnerResourceTests`
 
 > To skip the tests use: `-DskipTests=true` 
+
+- Extract fat-jar
+
+`$ mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)`
 
 ## Run with `docker-compose`
 

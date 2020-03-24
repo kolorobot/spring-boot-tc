@@ -1,7 +1,3 @@
-# ./mvnw clean target
-# mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
-# docker build -t spring-boot-tc .
-# docker run -it -p 8080:9000 spring-boot-tc
 FROM openjdk:13-alpine
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring

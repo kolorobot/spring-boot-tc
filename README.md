@@ -1,22 +1,26 @@
 # Spring Boot tests with Testcontainers and PostgreSQL
 
+## References
+
+- [Docker Compose for Spring Boot application with PostgreSQL](https://blog.codeleak.pl/2020/03/spring-boot-docker-compose.html)
+
 ## Package the application
 
-- Build package
+- Package the application
 
 `$ ./mvnw clean package`
 
 > To skip the tests use: `-DskipTests=true` 
 
-- Extract fat-jar
+- Extract libraries from `fat-jar`
 
 `$ mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)`
 
-## Run with `docker-compose`
+## Run
 
 `$ docker-compose build && docker-compose up`
 
-## API
+## Verify the application is running
 
 > Application listens on port 9000.
 
